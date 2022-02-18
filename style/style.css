@@ -248,7 +248,7 @@ nav>i {
 }
 
 .container_historique>p {
-    padding: 4rem;
+    padding: 3rem;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -258,6 +258,7 @@ nav>i {
     float: left;
     padding-left: 2rem;
     font-size: medium;
+    margin: 0;
 }
 
 .container_historique>div {

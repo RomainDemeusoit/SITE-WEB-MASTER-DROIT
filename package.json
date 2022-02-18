@@ -1,0 +1,20 @@
+{
+  "name": "site-web-master-droit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/style.css --style compressed",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/ --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainDemeusoit/SITE-WEB-MASTER-DROIT.git"
+  },
+  "author": "Romain Demeusoit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainDemeusoit/SITE-WEB-MASTER-DROIT/issues"
+  },
+  "homepage": "https://github.com/RomainDemeusoit/SITE-WEB-MASTER-DROIT#readme"
+}
