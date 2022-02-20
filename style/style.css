@@ -41,6 +41,7 @@ h1 {
 
 h2 {
     font-weight: bold;
+    font-size: large;
     font-family: 'roboto';
 }
 
@@ -150,11 +151,6 @@ nav>i {
     font-size: medium;
     padding: 1rem;
 }
-.container_index>div>h1 {
-    font-size: x-large;
-    text-align: center;
-    padding: 1rem;
-}
 
 /* ------------------------------------------------------------- ACTUALITES ----------------------------------------------------------------- */
 
@@ -232,7 +228,7 @@ nav>i {
     padding: 4rem;
 }
 
-.container_historique>div>h1 {
+.container_historique>div>h2 {
     text-decoration: underline;
 }
 
@@ -254,7 +250,7 @@ nav>i {
 
 /* ----------------------------------------------------- FORMATION ----------------------------------------------------- */
 
-.container_formation>div>h1 {
+.container_formation>div>h2 {
     text-decoration: underline;
     font-size: large;
 }
@@ -300,7 +296,7 @@ nav>i {
     padding: 2rem;
 }
 
-.container_jurivision>h1 {
+.container_jurivision>h2 {
     text-align: center;
     font-size: large;
     text-decoration: underline;
@@ -375,7 +371,7 @@ nav>i {
     font-size: x-large;
 }
 
-.promotions>h1 {
+.promotions>h2 {
     padding-bottom: 2rem;
     text-decoration: underline;
     font-size: large;
@@ -698,7 +694,7 @@ footer>div>div>ul>li>i {
         font-size: 1rem;
     }
 
-    .container_historique>h1 {
+    .container_historique>div>h2 {
         text-align: center;
     }
 
