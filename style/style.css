@@ -1,9 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     display: flex ;
     flex-direction: column ;
     align-items: center;
-    
 }
 
 header {
@@ -14,20 +17,6 @@ header {
     justify-content: space-around;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}
-
 a {
     color: black;
 }
@@ -35,6 +24,32 @@ a {
 a:link { 
     text-decoration:none; 
 }
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: medium !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: large;
+    font-family: 'roboto';
+    margin: 0 !important;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+/* -----------------------------------------------------BARRE DE NAVIGATION----------------------------------------------------- */
 
 nav>ul>i {
     color: white;
@@ -60,8 +75,6 @@ nav>ul>li>a:hover {
     margin: 1.2rem;
 }
 
-
-
 ul {
     padding: 0 !important;
     list-style-type: none;
@@ -69,28 +82,6 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: large;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    justify-content: flex-start;
-    text-align: justify;
-    font-size: medium !important;
-}
-
-h1 {
-    margin: 2rem;
-    font-size: large;
-}
-
-h2 {
-    font-weight: bold;
-}
-
-h3 {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
     font-size: large;
 }
 
@@ -114,10 +105,6 @@ nav>i {
 .logo {
     align-self: center;
     width: 17rem;
-}
-
-.adress>div {
-    width: 80%;
 }
 
 /* -----------------------------------------------------MOT DU DIRECTEUR----------------------------------------------------- */
@@ -241,6 +228,10 @@ nav>i {
     color: white;
 }
 
+.container_historique>div {
+    padding: 4rem;
+}
+
 .container_historique>h1 {
     text-decoration: underline;
     font-size: large;
@@ -253,18 +244,19 @@ nav>i {
     margin-bottom: 0;
 }
 
-.container_historique>div>p {
-    width: 45%;
+.container_historique>div>div>p {
+    width: 48%;
     float: left;
-    padding-left: 2rem;
     font-size: medium;
     margin: 0;
 }
 
-.container_historique>div {
+.container_historique>div>div {
     display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 
@@ -347,23 +339,34 @@ nav>i {
     padding-top: 2rem;
 }
 
-.container_membre_jurivision>p {
+.nom_membre_jurivision {
+    display: flex;
+    flex-direction: column;
     width: 65%;
     margin: 2rem;
-    line-height: 4rem;
-    text-align: center;
+    line-height: 1rem;
+    align-items: center;
     font-size: large !important;
 }
 
-.container_membre_jurivision>div {
-    width: 80%;
+.nom_membre_jurivision>p {
+    justify-content: center;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.photos_membres_jurivision {
+    width: 60%;
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
 }
 
-.container_membre_jurivision>div>img {
+.photos_membres_jurivision>img {
     width: 70%;
 }
 
@@ -406,7 +409,7 @@ nav>i {
 }
 
 .photo_promotion>img {
-    width: 80%;
+    width: 50%;
 }
 
 .intervenants {
@@ -415,7 +418,7 @@ nav>i {
 }
 
 .intervenants>img {
-    width: 65%;
+    width: 50%;
     margin: 1rem;
     border-radius: 65px;
 }
@@ -435,7 +438,7 @@ nav>i {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 /* ------------------------------------------------------------- INSCRIPTION ----------------------------------------------------------------- */
@@ -452,7 +455,6 @@ nav>i {
 }
 
 #inscription>h2 {
-    text-decoration: underline;
     font-size: large;
     font-weight: bold;
     padding: 1rem;
@@ -596,9 +598,6 @@ footer>div>div>ul>li>i {
 }
 
 @media screen and (max-width: 1000px) {
-    h1 {
-        margin: 0;
-    }
     
     header {
         flex-direction: column;
@@ -616,26 +615,36 @@ footer>div>div>ul>li>i {
         display: flex;
         justify-content: center;
     }
+
     footer>div {
         display: grid;
         flex-direction: column;
         text-align: center;
     }
+
     .split {
         display: none;
     }
+
     .container_index>div {
         width: 100% !important;
     }
+
     #directeur_pp {
         display: none;
-    }
-    .container_historique>div>p {
-        width: 85%;
     }
 
     .container_historique>div {
         flex-direction: column;
+        padding: 2rem;
+    }
+
+    .container_historique>div>div {
+        flex-direction: column;
+    }
+
+    .container_historique>div>div>p {
+        width: 100%;
     }
 
     .container_historique>p {
@@ -644,13 +653,19 @@ footer>div>div>ul>li>i {
 
     .container_membre_jurivision {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+
     .container_membre_jurivision>div>img {
         width: 100%;
     }
+
     .container_membre_jurivision>p {
         width: 100%;
+    }
+
+    .container_faq>div {
+        padding: 2rem;
     }
 
     .container_faq>div>p {
@@ -664,7 +679,8 @@ footer>div>div>ul>li>i {
         
     .container_jurivision>div>p {
         width: 100%;
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .intervenants>img {
@@ -702,4 +718,15 @@ footer>div>div>ul>li>i {
         top: 0;
     }
 
+    .photos_membres_jurivision {
+        width: 80%;
+    }
+
+    .photo_promotion>img {
+        width: 80%;
+    }
+
+    .intervenants>img {
+        width: 80%;
+    }
 }
