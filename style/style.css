@@ -232,16 +232,8 @@ nav>i {
     padding: 4rem;
 }
 
-.container_historique>h1 {
+.container_historique>div>h1 {
     text-decoration: underline;
-    font-size: large;
-    padding: 1rem;
-}
-
-.container_historique>p {
-    padding: 3rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
 }
 
 .container_historique>div>div>p {
